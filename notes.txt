@@ -1,0 +1,11 @@
+Resolved/Fulfilled: It worked 
+Rejected: It didn't work
+Pending: Still waiting...
+Settled: Something happened (resolved or rejected)
+
+Promises are on main thread and pottentially blocking
+	- Promise created
+	- FREEZE TIME (could block the browser rendering)
+	- Promise settled
+
+Web workers work in a separated thread, and post data to the main thread (async and perfect for promises)
